@@ -9,7 +9,7 @@ navigate to event from calendar.
 
 Installation
 ============
-- www.odoo.com/documentation/17.0/setup/install.html
+- www.odoo.com/documentation/18.0/setup/install.html
 - Install our custom addon
 
 License
@@ -25,6 +25,7 @@ Credits
 -------
 * Developers : (V16) Renu M,
                 (V17) Busthana Shirin,
+                (V18) Busthana Shirin
 * Contact: odoo@cybrosys.com
 
 Contacts

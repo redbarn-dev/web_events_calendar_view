@@ -3,7 +3,7 @@
 #
 #    Cybrosys Technologies Pvt. Ltd.
 #
-#    Copyright (C) 2024-TODAY Cybrosys Technologies(<https://www.cybrosys.com>).
+#    Copyright (C) 2025-TODAY Cybrosys Technologies(<https://www.cybrosys.com>).
 #    Author: Cybrosys Techno Solutions (Contact : odoo@cybrosys.com)
 #
 #    You can modify it under the terms of the GNU AFFERO
@@ -24,6 +24,7 @@ from odoo.tools import format_datetime
 
 class EventEvent(models.Model):
     _inherit = 'event.event'
+    """events class"""
 
     date_begin_pred_located = fields.Char(
         compute='_compute_date_begin_pred_located',

@@ -3,7 +3,7 @@
 #
 #    Cybrosys Technologies Pvt. Ltd.
 #
-#    Copyright (C) 2024-TODAY Cybrosys Technologies(<https://www.cybrosys.com>).
+#    Copyright (C) 2025-TODAY Cybrosys Technologies(<https://www.cybrosys.com>).
 #    Author: Cybrosys Techno Solutions (Contact : odoo@cybrosys.com)
 #
 #    You can modify it under the terms of the GNU AFFERO
@@ -20,7 +20,7 @@
 ################################################################################
 {
     'name': 'Website Event Calendar View',
-    'version': '17.0.1.0.0',
+    'version': '18.0.1.0.0',
     'category': 'Website',
     'summary': 'Website Calendar View for Event in Odoo 17',
     'description': 'This module helps you make calender view of events in '

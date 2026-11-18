@@ -6,7 +6,8 @@ const { DateTime } = luxon;
 import publicWidget from "@web/legacy/js/public/public_widget";
 import { renderToFragment } from "@web/core/utils/render";
 import { useService } from "@web/core/utils/hooks";
-import { jsonrpc } from "@web/core/network/rpc_service";
+import { rpc } from "@web/core/network/rpc";
+
 import { DateTimePicker } from "@web/core/datetime/datetime_picker";
 
 
@@ -92,7 +93,7 @@ publicWidget.registry.CustomCalendar = publicWidget.Widget.extend({
     loadDates: function (start, end) {
             const startdate = start.toISO();
 
-            return jsonrpc(
+            return rpc(
                 "/web_events_calendar_view/days_with_events",
                 {
                     start: start.toISO(),
@@ -141,7 +142,7 @@ publicWidget.registry.CustomCalendar = publicWidget.Widget.extend({
             return;
         }
 
-         var events = await jsonrpc(
+         var events = await rpc(
                 "/web_events_calendar_view/events",
                 {}
             );
@@ -194,7 +195,7 @@ publicWidget.registry.CustomCalendar = publicWidget.Widget.extend({
     },
 
     loadEvents: function (day, limit) {
-        return jsonrpc(
+        return rpc(
             "/web_events_calendar_view/events_for_day",
             {day: day, limit: limit}
         );
